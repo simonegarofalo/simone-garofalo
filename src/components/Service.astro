@@ -3,10 +3,10 @@ const { title, description, image, id } = Astro.props;
 const bgStyle = `background-image: url('${image}')`;
 ---
 
-<div class="h-[700px] grid grid-cols-12">
-  <div class="col-span-6 flex flex-col relative">
+<div class="h-[700px] grid grid-cols-12 mb-20">
+  <div class="col-start-2 col-end-6 flex flex-col relative">
     <h3
-      class="absolute top-0 left-0 text-5xl ml-5 cursor-pointer hover:text-orange-600"
+      class="absolute top-0 left-0 text-2xl cursor-pointer hover:text-orange-600"
     >
       {title}
     </h3>
