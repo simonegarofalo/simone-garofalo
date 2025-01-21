@@ -3,17 +3,17 @@ import "../styles/global.css";
 
 import Navbar from "../components/Navbar.astro";
 import Hero from "../components/Hero.astro";
-import Firstcalltoaction from "../components/Firstcalltoaction.astro";
+import About from "../components/About.astro";
 import Service from "../components/Service.astro";
 import Service2 from "../components/Service2.astro";
-
-import About from "../components/About.astro";
 import Project from "../components/Project.astro";
+import Contact from "../components/Contact.astro";
+import Footer from "../components/Footer.astro";
 ---
 
 <Navbar />
 <Hero />
-<Firstcalltoaction />
+<About />
 <h3 class="text-9xl ml-5 mt-28 mb-20">Servizi</h3>
 <section>
   <Service id="service-1" image="web-design.jpg" title="WEB DESIGN" />
@@ -44,3 +44,5 @@ import Project from "../components/Project.astro";
 </section>
 
 <h3 class="text-9xl ml-5 mt-28 mb-20">Contatti</h3>
+<Contact />
+<Footer />
