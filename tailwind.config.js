@@ -11,6 +11,10 @@ module.exports = {
           anton: ['Anton', 'sans-serif']
         }
   },
+  writingMode: {
+    'vertical-lr': 'vertical-lr',
+    'vertical-rl': 'vertical-rl',
+  },
 },
   plugins: [],
 }

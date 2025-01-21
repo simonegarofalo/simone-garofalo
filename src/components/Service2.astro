@@ -1,5 +1,5 @@
 ---
-const { title, description, image, id } = Astro.props;
+const { title, image, id } = Astro.props;
 const bgStyle = `background-image: url('${image}')`;
 ---
 
@@ -15,18 +15,17 @@ const bgStyle = `background-image: url('${image}')`;
       viewBox="0 -960 960 960"
       width="100px"
       fill="white"
-      class="absolute bottom-5 left-5"
+      class="absolute bottom-5 right-5"
       ><path
         d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h280v80H200v560h560v-280h80v280q0 33-23.5 56.5T760-120H200Zm188-212-56-56 372-372H560v-80h280v280h-80v-144L388-332Z"
       ></path></svg
     >
   </div>
-  <div class="col-span-4 flex flex-col relative">
+  <div class="col-start-9 col-end-12 flex flex-col relative">
     <h3
-      class="absolute top-0 right-0 text-5xl cursor-pointer trasform duration-500 hover:text-orange-400"
+      class="text-7xl absolute bottom-0 right-0 transform rotate-90 origin-bottom-right cursor-pointer trasform duration-500 hover:text-orange-400"
     >
       {title}
     </h3>
-    <p class="absolute bottom-0 left-0 text-end text-sm ml-5">{description}</p>
   </div>
 </div>
