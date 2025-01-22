@@ -1,5 +1,5 @@
 const textElement = document.querySelector(".dinamic-text-content");
-    const texts = ["web designer", "developer", "creativo"];
+    const texts = ["web designer", "<developer/>", "creativo"];
     let textIndex = 0;
 
     function updateText() {
