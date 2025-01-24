@@ -4,28 +4,17 @@ const bgStyle = `background-image: url('${image}')`;
 ---
 
 <div class="h-[700px] grid grid-cols-12 mb-20">
-  <div class="col-start-2 col-end-4 flex items-baseline">
+  <div class="col-start-2 col-end-3 flex items-baseline">
     <h3
-      class="text-6xl font-light md:text-7xl lg:text-8xl transform [writing-mode:vertical-rl] rotate-180 whitespace-nowrap cursor-pointer"
+      class="text-6xl md:text-7xl transform [writing-mode:vertical-rl] rotate-180 whitespace-nowrap cursor-pointer"
     >
       {title}
     </h3>
   </div>
   <div
     id={id}
-    class="col-start-4 col-end-12 object-cover relative brightness-50 transition duration-700 hover:brightness-75 cursor-pointer"
+    class="bg-green-400 col-start-3 col-end-13 object-cover relative brightness-50 transition duration-700 hover:brightness-75 cursor-pointer"
     style={bgStyle}
   >
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      height="100px"
-      viewBox="0 -960 960 960"
-      width="100px"
-      fill="white"
-      class="absolute bottom-5 right-5"
-      ><path
-        d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h280v80H200v560h560v-280h80v280q0 33-23.5 56.5T760-120H200Zm188-212-56-56 372-372H560v-80h280v280h-80v-144L388-332Z"
-      ></path></svg
-    >
   </div>
 </div>
