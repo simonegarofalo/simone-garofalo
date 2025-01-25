@@ -3,7 +3,19 @@ const { title, description, image, id } = Astro.props;
 const bgStyle = `background-image: url('${image}')`;
 ---
 
-<div class="overflow-hidden cursor-pointer">
+<div class="h-3/6 grid-cols-12 grid-rows-4">
+  <div
+    id={id}
+    class="col-span-12 rows-span-2 flex items-center justify-center bg-cover bg-center bg-no-repeat transform transition-all duration-1000 hover:scale-110"
+    style={bgStyle}
+  >
+    <div class="text-center text-white">
+      <h3 class="text-6xl md:text-7xl leading-relaxed">{title}</h3>
+      <p>{description}</p>
+    </div>
+  </div>
+</div>
+<!-- <div class="overflow-hidden cursor-pointer">
   <div
     id={id}
     class="flex items-center justify-center h-lvh w-screen bg-cover bg-center bg-no-repeat transform transition-all duration-1000 hover:scale-110"
@@ -14,4 +26,4 @@ const bgStyle = `background-image: url('${image}')`;
       <p>{description}</p>
     </div>
   </div>
-</div>
+</div> -->
