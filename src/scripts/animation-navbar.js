@@ -14,3 +14,18 @@ menuClose.addEventListener("click", () => {
   menuToggle.classList.remove("hidden")
 
 });
+
+document.addEventListener("scroll", () => {
+  const navbar = document.getElementById("navbar");
+  const logo = document.getElementById("logo");
+  const scrollY = window.scrollY;
+
+  if (scrollY > 50) {
+    logo.style.opacity = "0";
+    logo.style.transform = "translateY(-20px)";
+    logo.style.transition = "opacity 0.3s, transform 0.3s";
+  } else {
+    logo.style.opacity = "1";
+    logo.style.transform = "translateY(0)";
+  }
+});
