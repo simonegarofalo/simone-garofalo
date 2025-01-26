@@ -4,9 +4,9 @@ import "../styles/global.css";
 import Navbar from "../components/Navbar.astro";
 import Hero from "../components/Hero.astro";
 import About from "../components/About.astro";
-import Service from "../components/Service.astro";
-import Service2 from "../components/Service2.astro";
 import Project from "../components/Project.astro";
+import Project2 from "../components/Project2.astro";
+
 import Contact from "../components/Contact.astro";
 import Footer from "../components/Footer.astro";
 ---
@@ -38,20 +38,20 @@ import Footer from "../components/Footer.astro";
 >
   Progetti
 </h3>
-<section class="h-svh">
+<section class="grid grid-cols-12 grid-rows-3 gap-2 ml-5 mr-5">
   <Project
     id="project-1"
-    image="moda.jpg"
+    image="beauty.jpg"
     title="PROGETTO 1"
     description="Descrizione del primo progetto"
   />
-  <Project
+  <Project2
     id="project-2"
     image="arredo.jpg"
     title="PROGETTO 2"
     description="Descrizione del secondo progetto"
   />
-  <Project
+  <Project2
     id="project-3"
     image="beauty.jpg"
     title="PROGETTO 3"
