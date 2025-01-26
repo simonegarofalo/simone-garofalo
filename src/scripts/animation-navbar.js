@@ -14,4 +14,3 @@ menuClose.addEventListener("click", () => {
   menuToggle.classList.remove("hidden")
 
 });
-
