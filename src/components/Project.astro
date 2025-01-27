@@ -5,10 +5,14 @@ const bgStyle = `background-image: url('${image}')`;
 
 <div
   id={id}
-  class="h-[600px] col-span-12 lg:col-span-6 lg:row-span-2 flex items-center justify-center bg-cover bg-center bg-no-repeat rounded-xl transition duration-700 hover:brightness-75 cursor-pointer"
+  class="h-[600px] col-span-12 lg:col-span-6 lg:row-span-2 relative group flex items-center justify-center bg-cover bg-center bg-no-repeat object-cover rounded-xl cursor-pointer"
   style={bgStyle}
 >
-  <div class="text-center text-white">
+  <div
+    class="absolute inset-0 bg-black/50 transition duration-700 group-hover:bg-black/20 rounded-xl"
+  >
+  </div>
+  <div class="text-center text-white absolute flex flex-col gap-5">
     <h3 class="text-6xl md:text-7xl leading-relaxed">{title}</h3>
     <p>{description}</p>
   </div>
