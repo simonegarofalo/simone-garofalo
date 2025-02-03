@@ -8,51 +8,62 @@ import Project from "../components/Project.astro";
 import Project2 from "../components/Project2.astro";
 import Project3 from "../components/Project3.astro";
 
-import Contact from "../components/Contact.astro";
 import Footer from "../components/Footer.astro";
 ---
 
-<Navbar />
-<Hero />
-<h3
-  id="about"
-  class="text-7xl md:text-8xl font-bold text-[#333333] ml-5 mt-36 mb-20"
->
-  About me
-</h3>
-<About />
-<h3
-  id="progetti"
-  class="text-7xl md:text-8xl font-bold text-[#333333] ml-5 mt-36 mb-20"
->
-  Progetti
-</h3>
-<section class="grid grid-cols-12 grid-rows-3 gap-5 ml-5 mr-5">
-  <Project
-    id="project-1"
-    image="progetto-1.png"
-    title="Portfolio"
-    description="Astro, HTML5, CSS3, Javascript, Tailwind"
-  />
-  <Project2
-    id="project-2"
-    image="progetto-2.png"
-    title="Sito web"
-    description="HTML5, CSS3, GSAP, Javascript, PHP, MySQL"
-  />
-  <Project3
-    id="project-3"
-    image="progetto-3.png"
-    title="Landing page"
-    description="HTML5, CSS3, Javascript, PHP, MySQL"
-  />
-</section>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <link rel="stylesheet" href="/src/styles/global.css" />
+    <title>Simone Garofalo | Web designer & Front-end developer</title>
+  </head>
+  <body>
+    <Navbar />
+    <Hero />
+    <h3
+      id="about"
+      class="text-3xl lg:text-7xl font-bold ml-5 mt-20 lg:mt-40 mb-4 lg:mb-8"
+    >
+      About me
+    </h3>
+    <About />
+    <h3
+      id="progetti"
+      class="text-3xl lg:text-7xl font-bold ml-5 mt-20 lg:mt-60 mb-4 lg:mb-8"
+    >
+      Progetti
+    </h3>
+    <section class="grid grid-cols-12 grid-rows-3 gap-3 mx-5">
+      <Project
+        id="project-1"
+        image="progetto-1.png"
+        title="Portfolio"
+        description="Astro, HTML5, CSS3, Javascript, Tailwind"
+      />
+      <Project2
+        id="project-2"
+        image="progetto-2.png"
+        title="Sito web"
+        description="HTML5, CSS3, GSAP, Javascript, PHP, MySQL"
+      />
+      <Project3
+        id="project-3"
+        image="progetto-3.png"
+        title="Landing page"
+        description="HTML5, CSS3, Javascript, PHP, MySQL"
+      />
+    </section>
 
-<h3
-  id="contatti"
-  class="text-7xl md:text-8xl font-bold text-[#333333] ml-5 mt-36 mb-20"
->
-  Contatti
-</h3>
-<Contact />
-<Footer />
+    <h3
+      id="contatti"
+      class="text-3xl lg:text-7xl font-bold ml-5 mt-20 lg:mt-0 mb-4 lg:mb-8"
+    >
+      Contatti
+    </h3>
+    <Footer />
+  </body>
+</html>
