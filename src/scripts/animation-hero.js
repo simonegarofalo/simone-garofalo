@@ -1,17 +1,16 @@
-const textElement = document.querySelector(".dinamic-text-content");
-    const texts = ["web designer", "<developer/>", "creativo"];
-    let textIndex = 0;
+let buttonHero = document.getElementById('button-hero')
+const mediaQuery = window.matchMedia('(min-width: 768px)');
 
-    function updateText() {
-    textElement.textContent = texts[textIndex];
-    textElement.id = `text-${textIndex}`;
-    }
+function checkDeviceType(e) {
+  if (e.matches) {
+    buttonHero.classList.add("hidden");
+  } 
+  else {
+    buttonHero.classList.remove("hidden");
 
-    updateText();
+}
+}
 
-    textElement.addEventListener("animationiteration", () => {
-      textIndex = (textIndex + 1) % texts.length;
-      textElement.textContent = texts[textIndex];
+mediaQuery.addEventListener('change', checkDeviceType);
 
-      updateText();
-    });
+checkDeviceType(mediaQuery);

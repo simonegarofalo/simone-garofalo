@@ -1,60 +1,44 @@
-<header>
-  <nav class="grid grid-cols-12 h-14 w-full my-10 fixed z-10">
-    <div class="col-start-2 col-end-12 flex items-center justify-between">
-      <div id="logo" class="text-base lg:text-xl text-center leading-none">
-        <a href="/">simone<br /> garofalo</a>
-      </div>
-      <div
-        id="menu-toggle"
-        class="flex flex-col gap-3 justify-center items-end cursor-pointer h-16 w-16"
-      >
-        <span class="bg-black h-1 lg:h-2 w-10 lg:w-16"></span>
-        <span class="bg-black h-1 lg:h-2 w-10 lg:w-16"></span>
-      </div>
-    </div>
-  </nav>
-
-  <div
-    id="menu"
-    class="fixed h-screen w-screen top-0 left-0 z-10 grid grid-cols-12 bg-gradient-to-l from-gray-950 text-white opacity-0 pointer-events-none transform -translate-y-full transition-all duration-500 ease-in-out"
+<header class="h-32 w-full grid grid-cols-12 fixed top-0 left-0 z-20">
+  <nav
+    id="navbar"
+    class="col-start-2 col-end-12 flex items-center justify-between rounded-full p-6 my-6 shadow-lg bg-white"
   >
-    <div class="col-start-2 col-end-12 flex flex-col my-10">
-      <div
-        class="hamburger relative flex flex-col gap-3 justify-center items-end h-14 mb-12"
-      >
-        <div id="menu-close" class="cursor-pointer h-16 w-16">
-          <span
-            class="bg-white h-1 lg:h-2 w-10 lg:w-16 absolute transform rotate-45 top-1/2 right-0 -translate-y-1/2"
-          ></span>
-          <span
-            class="bg-white h-1 lg:h-2 w-10 lg:w-16 absolute transform -rotate-45 top-1/2 right-0 -translate-y-1/2"
-          ></span>
-        </div>
-      </div>
-
-      <ul class="text-4xl lg:text-7xl justify-end text-right py-5">
-        <li class="pb-">
-          <a href="/" class="hover:underline cursor-pointer">Home</a>
-        </li>
-        <li class="pb-">
-          <a href="/curriculum" class="hover:underline cursor-pointer"
-            >Curriculum</a
-          >
-        </li>
-        <li class="pb-">
-          <a href="#about" class="hover:underline cursor-pointer">About me</a>
-        </li>
-        <li class="pb-">
-          <a href="#progetti" class="hover:underline cursor-pointer">Progetti</a
-          >
-        </li>
-        <li class="pb-">
-          <a href="#contatti" class="hover:underline cursor-pointer">Contatti</a
-          >
-        </li>
-      </ul>
+    <div id="logo" class="tremble text-lg leading-none hidden">
+      <a href="/">simone garofalo</a>
     </div>
-  </div>
+    <ul class="flex justify-center items-center">
+      <li class="">
+        <a
+          href="#about"
+          class="hover:text-blue-600 transition duration-200 cursor-pointer"
+          >About</a
+        >
+      </li>
+      <li class="ml-10">
+        <a
+          href="#progetti"
+          class="hover:text-blue-600 transition duration-200 cursor-pointer"
+          >Progetti</a
+        >
+      </li>
+      <li class="ml-10">
+        <a
+          href="#contatti"
+          class="hover:text-blue-600 transition duration-200 cursor-pointer"
+          >Contatti</a
+        >
+      </li>
+      <li id="button" class="ml-10 hidden">
+        <a href="/Simone Garofalo CV.pdf" download>
+          <div
+            class="bg-blue-600 hover:bg-blue-800 transition duration-200 text-white rounded-full py-2 px-4 cursor-pointer"
+          >
+            Download CV
+          </div>
+        </a>
+      </li>
+    </ul>
+  </nav>
 </header>
 
 <script src="/src/scripts/animation-navbar.js"></script>

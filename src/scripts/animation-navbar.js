@@ -1,31 +1,23 @@
-const menu = document.getElementById("menu");
-const menuToggle = document.getElementById("menu-toggle");
-const menuClose = document.getElementById("menu-close");
+let button = document.getElementById('button')
+let logo = document.getElementById('logo')
+let navbar = document.getElementById('navbar')
 
-menuToggle.addEventListener("click", () => {
-  menu.classList.remove("opacity-0", "-translate-y-full", "pointer-events-none");
-  menu.classList.add("opacity-100", "translate-y-0");
-  menuToggle.classList.add("hidden")
-});
+const mediaQuery = window.matchMedia('(min-width: 768px)');
 
-menuClose.addEventListener("click", () => {
-  menu.classList.remove("opacity-100", "translate-y-0");
-  menu.classList.add("opacity-0", "-translate-y-full", "pointer-events-none");
-  menuToggle.classList.remove("hidden")
+function checkDeviceType(e) {
+  if (e.matches) {
+    button.classList.remove("hidden");
+    logo.classList.remove("hidden");
+    navbar.classList.add("justify-between");
+  } 
+  else {
+    button.classList.add("hidden");
+    logo.classList.add("hidden");
+    navbar.classList.remove("justify-between");
+    navbar.classList.add("justify-center");
+}
+}
 
-});
+mediaQuery.addEventListener('change', checkDeviceType);
 
-document.addEventListener("scroll", () => {
-  const navbar = document.getElementById("navbar");
-  const logo = document.getElementById("logo");
-  const scrollY = window.scrollY;
-
-  if (scrollY > 50) {
-    logo.style.opacity = "0";
-    logo.style.transform = "translateY(-20px)";
-    logo.style.transition = "opacity 0.3s, transform 0.3s";
-  } else {
-    logo.style.opacity = "1";
-    logo.style.transform = "translateY(0)";
-  }
-});
+checkDeviceType(mediaQuery);

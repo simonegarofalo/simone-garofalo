@@ -1,0 +1,72 @@
+---
+import Todo from "../components/Todo.astro";
+---
+
+<div id="progetti" class="mb-40"></div>
+
+<section class="h-full grid grid-cols-12 md:my-40">
+  <div class="col-start-2 col-end-12 grid grid-cols-4 grid-rows-8 gap-5 h-full">
+    <div
+      class="h-[210px] md:h-auto col-span-4 md:col-span-2 row-start-1 row-end-2 md:row-span-3 bg-[url(/img2.png)] bg-cover bg-center rounded-3xl relative"
+    >
+      <a
+        href="https://studio-yoga-landingpage.netlify.app/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <div
+          class="flex justify-center items-center absolute bottom-3 left-3 h-10 w-10 border-2 rounded-full cursor-pointer"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="24px"
+            viewBox="0 -960 960 960"
+            width="24px"
+            fill="gray"
+            class="hover:scale-110 transition duration-200"
+          >
+            <path d="m216-160-56-56 464-464H360v-80h400v400h-80v-264L216-160Z"
+            ></path>
+          </svg>
+        </div>
+      </a>
+    </div>
+
+    <div
+      class="col-span-4 md:col-span-2 row-start-2 row-end-5 md:row-span-6 bg-[url(/img.png)] bg-cover bg-center rounded-3xl relative"
+    >
+      <a
+        href="https://ice-cream-shop-project.netlify.app/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <div
+          class="flex justify-center items-center absolute bottom-3 left-3 h-10 w-10 border-2 rounded-full cursor-pointer"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="24px"
+            viewBox="0 -960 960 960"
+            width="24px"
+            fill="gray"
+            class="hover:scale-110 transition duration-200"
+          >
+            <path d="m216-160-56-56 464-464H360v-80h400v400h-80v-264L216-160Z"
+            ></path>
+          </svg>
+        </div>
+      </a>
+    </div>
+
+    <div
+      class="row-start-5 row-end-7 col-span-4 md:col-span-2 row-span-3 md:row-span-3 bg-[#EFEEEC] rounded-3xl relative"
+    >
+      <Todo />
+    </div>
+    <div
+      class="md:h-auto col-span-4 md:col-span-4 row-start-7 row-end-8 md:row-span-3 flex justify-center items-center rounded-3xl border-4 border-[#EFEEEC] border-dotted relative"
+    >
+      <h3 class="text-[#949494]">Coming soon</h3>
+    </div>
+  </div>
+</section>
