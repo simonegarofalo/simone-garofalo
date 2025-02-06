@@ -1,11 +1,14 @@
 ---
 import Todo from "../components/Todo.astro";
+import Weather from "./Weather.astro";
 ---
 
 <div id="progetti" class="mb-40"></div>
 
 <section class="h-full grid grid-cols-12 md:my-40">
-  <div class="col-start-2 col-end-12 grid grid-cols-4 grid-rows-8 gap-5 h-full">
+  <div
+    class="col-start-2 col-end-12 grid grid-cols-4 grid-rows-10 gap-5 h-full"
+  >
     <div
       class="h-[210px] md:h-auto col-span-4 md:col-span-2 row-start-1 row-end-2 md:row-span-3 bg-[url(/img2.png)] bg-cover bg-center rounded-3xl relative"
     >
@@ -64,7 +67,12 @@ import Todo from "../components/Todo.astro";
       <Todo />
     </div>
     <div
-      class="md:h-auto col-span-4 md:col-span-4 row-start-7 row-end-8 md:row-span-3 flex justify-center items-center rounded-3xl border-4 border-[#EFEEEC] border-dotted relative"
+      class="row-start-7 row-end-8 col-span-4 md:col-start-4 md:col-end-5 row-span-3 md:row-span-3 bg-[#EFEEEC] rounded-3xl relative"
+    >
+      <Weather />
+    </div>
+    <div
+      class="md:h-auto col-span-4 md:col-span-4 row-start-8 row-end-9 md:row-span-3 flex justify-center items-center rounded-3xl border-4 border-[#EFEEEC] border-dotted relative"
     >
       <h3 class="text-[#949494]">Coming soon</h3>
     </div>
