@@ -42,7 +42,7 @@ fetch(url)
 
     const weatherImage = weatherImages[weatherGroup] || './assets/sunny.png';
 
-    document.getElementById('temperature').textContent = `${currentTemperature}°C`;
+    document.getElementById('temperature').textContent = `${currentTemperature}°`;
     document.getElementById('weather-img').src = weatherImage;
 
     console.log(currentWeatherCode);
