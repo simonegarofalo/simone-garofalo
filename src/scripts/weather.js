@@ -9,6 +9,8 @@ fetch(url)
 
     const currentWeatherCode = data.current_weather.weathercode;
 
+    console.log(currentWeatherCode)
+
     const currentHour = new Date().getHours();
 
     const weatherImages = {
@@ -40,7 +42,7 @@ fetch(url)
     }
   }
 
-    const weatherImage = weatherImages[weatherGroup] || './assets/sunny.png';
+    const weatherImage = weatherImages[weatherGroup] || '/undefined.png';
 
     document.getElementById('temperature').textContent = `${currentTemperature}°`;
     document.getElementById('weather-img').src = weatherImage;
