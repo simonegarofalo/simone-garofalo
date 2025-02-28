@@ -8,7 +8,7 @@ module.exports = {
     extend: {
         fontFamily: {
           poppins: ['Poppins', 'sans-serif'],
-          anton: ['Anton', 'sans-serif']
+          martian: ['Martian Mono', 'monospace']
         }
   },
   writingMode: {

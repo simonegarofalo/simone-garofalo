@@ -1,5 +1,6 @@
 ---
 import Todo from "../components/Todo.astro";
+import Timer from "./Timer.astro";
 import Weather from "./Weather.astro";
 ---
 
@@ -7,7 +8,7 @@ import Weather from "./Weather.astro";
 
 <section class="h-full grid grid-cols-12 md:mb-40">
   <div
-    class="col-start-2 col-end-12 grid grid-cols-4 grid-rows-10 gap-5 h-full"
+    class="col-start-2 col-end-12 grid grid-cols-4 grid-rows-11 gap-5 h-full"
   >
     <div
       class="h-[210px] md:h-auto col-span-4 md:col-span-2 row-start-1 row-end-2 md:row-span-3 bg-[url(/img2.png)] bg-cover bg-center rounded-3xl relative"
@@ -67,12 +68,17 @@ import Weather from "./Weather.astro";
       <Todo />
     </div>
     <div
-      class="row-start-7 row-end-8 col-span-4 md:col-start-4 md:col-end-5 md:row-span-2 bg-[#EFEEEC] rounded-3xl relative"
+      class="row-start-7 row-end-8 col-span-4 md:col-start-3 md:col-end-4 md:row-span-2 bg-[#EFEEEC] rounded-3xl relative"
+    >
+      <Timer />
+    </div>
+    <div
+      class="row-start-8 row-end-9 col-span-4 md:col-start-4 md:col-end-5 md:row-span-2 bg-[#EFEEEC] rounded-3xl relative"
     >
       <Weather />
     </div>
     <div
-      class="md:h-auto col-span-4 md:col-span-4 row-start-8 row-end-10 md:row-span-3 flex justify-center items-center rounded-3xl border-4 border-[#EFEEEC] border-dotted relative"
+      class="md:h-auto col-span-4 md:col-span-4 row-start-9 row-end-11 md:row-span-3 flex justify-center items-center rounded-3xl border-4 border-[#EFEEEC] border-dotted relative"
     >
       <h3 class="text-[#949494]">Coming soon</h3>
     </div>
