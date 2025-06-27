@@ -6,40 +6,27 @@ import Weather from "./Weather.astro";
 
 <div id="progetti" class="h-32"></div>
 
-<section class="h-full grid grid-cols-12">
+<section class="grid grid-cols-12">
   <div
-    class="col-start-2 col-end-12 grid grid-cols-4 grid-rows-11 gap-5 h-full"
+    class="col-span-12 md:col-start-5 md:col-end-9 px-4 flex flex-col justify-center items-center gap-10"
   >
-    <div
-      class="h-[210px] md:h-auto col-span-4 md:col-span-2 row-start-1 row-end-2 md:row-span-3 bg-[url(/img2.png)] bg-cover bg-center rounded-3xl relative"
+    <a
+      href="https://studio-yoga-landingpage.netlify.app/"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="w-full h-[300px] bg-[url(/studio-yoga-new.png)] bg-cover bg-center rounded-3xl border shadow-lg relative hover:scale-105 transition duration-200"
     >
-      <a
-        href="https://studio-yoga-landingpage.netlify.app/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <div
-          class="flex justify-center items-center absolute bottom-3 left-3 h-10 w-10 border-2 rounded-full cursor-pointer"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            height="24px"
-            viewBox="0 -960 960 960"
-            width="24px"
-            fill="gray"
-            class="hover:scale-110 transition duration-200"
-          >
-            <path d="m216-160-56-56 464-464H360v-80h400v400h-80v-264L216-160Z"
-            ></path>
-          </svg>
-        </div>
-      </a>
-    </div>
+      <div></div></a
+    >
 
-    <div
-      class="col-span-4 md:col-span-2 row-start-2 row-end-5 md:row-span-6 bg-[url(/img.png)] bg-cover bg-center rounded-3xl relative"
+    <a
+      href="https://gelateria-milano.netlify.app/"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="w-full h-[500px] bg-[url(/gelateria-milano.png)] bg-cover bg-center rounded-3xl border shadow-lg relative hover:scale-105 transition duration-200"
     >
-      <a
+      <div>
+        <!-- <a
         href="https://ice-cream-shop-project.netlify.app/"
         target="_blank"
         rel="noopener noreferrer"
@@ -59,28 +46,13 @@ import Weather from "./Weather.astro";
             ></path>
           </svg>
         </div>
-      </a>
-    </div>
-
+      </a> -->
+      </div>
+    </a>
     <div
-      class="row-start-5 row-end-7 col-span-4 md:col-span-2 row-span-3 md:row-span-3 bg-[#EFEEEC] rounded-3xl relative"
+      class="w-full h-[300px] flex justify-center items-center rounded-3xl border-4 border-[#EFEEEC] border-dotted relative"
     >
-      <Todo />
-    </div>
-    <div
-      class="row-start-7 row-end-8 col-span-4 md:col-start-3 md:col-end-4 md:row-span-2 bg-[#EFEEEC] rounded-3xl relative"
-    >
-      <Timer />
-    </div>
-    <div
-      class="row-start-8 row-end-9 col-span-4 md:col-start-4 md:col-end-5 md:row-span-2 bg-[#EFEEEC] rounded-3xl relative"
-    >
-      <Weather />
-    </div>
-    <div
-      class="md:h-auto col-span-4 md:col-span-4 row-start-9 row-end-11 md:row-span-3 flex justify-center items-center rounded-3xl border-4 border-[#EFEEEC] border-dotted relative"
-    >
-      <h3 class="text-[#949494]">Coming soon</h3>
+      <h3 class="text-[#949494]">Coming soon..</h3>
     </div>
   </div>
 </section>

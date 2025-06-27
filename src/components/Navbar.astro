@@ -1,34 +1,39 @@
-<header class="h-32 w-full grid grid-cols-12 fixed top-0 left-0 z-20">
+<header class="w-full grid grid-cols-12 fixed top-14 left-0 z-10 px-4 md:px-0">
   <nav
     id="navbar"
-    class="col-start-2 col-end-12 flex items-center justify-between rounded-full p-6 my-6 shadow-lg bg-white"
+    class="col-span-12 md:col-start-5 md:col-end-9 flex items-center justify-center rounded-full p-4 bg-white shadow-lg bg-opacity-10 backdrop-blur-lg border"
   >
-    <div id="logo" class="tremble text-lg leading-none hidden">
+    <!--     <div id="logo" class="tremble text-lg leading-none hidden">
       <a href="/">simone garofalo</a>
-    </div>
-    <ul class="flex justify-center items-center">
-      <li class="">
+    </div> -->
+    <ul class="flex justify-between items-center text-gray-400">
+      <li>
         <a
           href="#about"
-          class="hover:text-blue-600 transition duration-200 cursor-pointer"
+          class="hover:text-black transition duration-200 cursor-pointer mr-10"
           >About</a
         >
       </li>
-      <li class="ml-10">
+      <div
+        class="relative h-2 w-2 rounded-full flex justify-center items-center bg-[#f13221] mr-2"
+      >
+        <div class="pulsing absolute h-3 w-3 rounded-full bg-[#f13221]"></div>
+      </div>
+      <li>
         <a
           href="#progetti"
-          class="hover:text-blue-600 transition duration-200 cursor-pointer"
+          class="hover:text-black transition duration-200 cursor-pointer"
           >Progetti</a
         >
       </li>
-      <li class="ml-10">
+      <li>
         <a
           href="#contatti"
-          class="hover:text-blue-600 transition duration-200 cursor-pointer"
+          class="hover:text-black transition duration-200 cursor-pointer ml-10"
           >Contatti</a
         >
       </li>
-      <li id="button" class="ml-10 hidden">
+      <!--       <li id="button" class="ml-10 hidden">
         <a href="/Simone-Garofalo-CV.pdf" download>
           <div
             class="bg-blue-600 hover:bg-blue-800 transition duration-200 text-white rounded-full py-2 px-4 cursor-pointer"
@@ -36,7 +41,7 @@
             Download CV
           </div>
         </a>
-      </li>
+      </li> -->
     </ul>
   </nav>
 </header>
