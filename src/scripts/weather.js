@@ -14,11 +14,11 @@ fetch(url)
     const currentHour = new Date().getHours();
 
     const weatherImages = {
-      'sereno': '/sunny.png',
-      'nuvoloso': '/cloudy.png',
-      'pioggia': '/rainy.png',
-      'pioggia forte': '/stormy.png',
-      'notte': '/moon.png',
+      'sereno': '/sunny.svg',
+      'nuvoloso': '/cloudy.svg',
+      'pioggia': '/rainy.svg',
+      'pioggia forte': '/stormy.svg',
+      'notte': '/moon.svg',
 
     };
 
@@ -42,7 +42,7 @@ fetch(url)
     }
   }
 
-    const weatherImage = weatherImages[weatherGroup] || '/undefined.png';
+    const weatherImage = weatherImages[weatherGroup] || '/undefined.svg';
 
     document.getElementById('temperature').textContent = `${currentTemperature}°`;
     document.getElementById('weather-img').src = weatherImage;

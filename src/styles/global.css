@@ -107,7 +107,7 @@ body {
 .start {
   color: #fff;
   --tw-text-opacity: 1;
-  background-color: rgb(37 99 235 / var(--tw-text-opacity, 1));
+  background-color: #000000;
 }
 
 .pause {
