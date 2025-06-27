@@ -1,0 +1,55 @@
+<div id="form" class="h-32"></div>
+<section class="grid grid-cols-12">
+  <div class="col-span-12 px-4 md:col-start-5 md:col-end-9">
+    <h3 class="text-xl font-semibold text-center mb-4">
+      Il tuo sito web è ottimizzato?<br /> Richiedi un'analisi <span
+        class="font-bold text-green-500">gratuita</span
+      > ora <span class="opacity-0 md:opacity-100">👇🏼</span>
+    </h3>
+    <form
+      action="./success-page"
+      method="POST"
+      name="landing-page"
+      data-netlify="true"
+      id="contact-form"
+      class="w-full md:max-w-[700px] flex flex-col"
+    >
+      <span>La tua email</span>
+      <label for="email">
+        <input
+          id="email"
+          name="email"
+          type="email"
+          placeholder="Inserisci qui la tua email"
+          pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
+          class="w-full p-3 my-2 pl-4 mb-4 rounded-3xl border border-black text-start"
+          required
+        />
+      </label>
+      <p id="email-error" class="text-red-500 text-xs hidden">
+        Inserisci una mail valida
+      </p>
+      <span>Il tuo messaggio</span>
+      <label
+        for="message"
+        class="w-full mb-8 my-2 rounded-2xl border border-black text-start"
+      >
+        <textarea
+          id="message"
+          name="message"
+          placeholder="Scrivi il tuo messaggio qui..."
+          rows="5"
+          class="w-full rounded-2xl p-2"
+          required></textarea>
+      </label>
+      <input
+        type="submit"
+        value="Invia"
+        id="submit"
+        class="bg-black text-white rounded-full py-2 px-4 cursor-pointer hover:scale-105 transition duration-200"
+      />
+    </form>
+  </div>
+</section>
+
+<script src="/src/scripts/validation-form.js"></script>
