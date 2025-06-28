@@ -22,18 +22,17 @@
           /></label
         >
       </p>
-      <span>La tua email</span>
-      <label for="email">
-        <input
-          id="email"
-          name="email"
-          type="email"
-          placeholder="Inserisci qui la tua email"
-          pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
-          class="w-full p-4 mb-4 rounded-3xl border border-black text-start focus:outline-none focus:ring-1 focus:ring-black"
-          required
-        />
-      </label>
+      <label for="email" class="mb-2">La tua email</label>
+
+      <input
+        id="email"
+        name="email"
+        type="email"
+        placeholder="Inserisci qui la tua email"
+        pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
+        class="w-full p-4 mb-4 rounded-3xl border border-black text-start focus:outline-none focus:ring-1 focus:ring-black"
+        required
+      />
       <p id="email-error" class="text-red-500 text-xs hidden">
         Inserisci una mail valida
       </p>
