@@ -14,7 +14,8 @@ document.querySelector("form").addEventListener("submit", async (e) => {
     const data = await res.json();
   
     if (data.success) {
-      window.location.href = "/";
+        console.log('Email inviata con successo!');
+
     } else {
       alert("Errore nell'invio della mail!");
       console.error("Errore nell'invio della mail:", data.error);  }
