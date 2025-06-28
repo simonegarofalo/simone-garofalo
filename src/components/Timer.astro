@@ -12,6 +12,8 @@
       id="removeButton"
       class="h-10 w-16 flex justify-center items-center text-base bg-transparent border-none cursor-pointer transition-all duration-300 ease-in-out"
       onclick="remove()"
+      aria-label="Rimuovi tempo"
+      title="Rimuovi tempo"
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -28,6 +30,7 @@
       id="startButton"
       class="start h-10 w-24 text-base bg-transparent border-none rounded-3xl cursor-pointer transition-all duration-300 ease-in-out"
       onclick="toggleTimer()"
+      aria-pressed="false"
     >
       Start
     </button>
@@ -35,6 +38,8 @@
       id="addButton"
       class="h-10 w-16 text-base flex justify-center items-center bg-transparent border-none cursor-pointer transition-all duration-300 ease-in-out"
       onclick="add()"
+      aria-label="Aggiungi tempo"
+      title="Aggiungi tempo"
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"
