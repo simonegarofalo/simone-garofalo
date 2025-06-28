@@ -197,7 +197,7 @@ const mailjet = Mailjet.apiConnect(
                     <tr>
                       <td align="center" style="font-size:0px;padding:0;word-break:break-word;">
                         <div style="font-family:Arial, sans-serif;font-size:14px;line-height:1.5;text-align:center;color:#000000;">
-                          <p>Grazie ancora per l’interesse e la fiducia.<br>A presto!</p>
+                          <p>Grazie ancora per l’interesse e la fiducia che hai dimostrato.<br>A presto!</p>
                         </div>
                       </td>
                     </tr>
