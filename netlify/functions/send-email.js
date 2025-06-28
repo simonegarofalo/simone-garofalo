@@ -114,7 +114,7 @@ const mailjet = Mailjet.apiConnect(
                     <tr>
                       <td align="center" style="font-size:0px;padding:0 20px;word-break:break-word;">
                         <div style="font-family:Arial, sans-serif;font-size:14px;line-height:1.5;text-align:center;color:#000000;">
-                          <h1>Grazie per aver candidato il tuo progetto!</h1>
+                          <h1>Grazie per avermi contattato!</h1>
                           <p>Ciao! in questo momento sono al lavoro per analizzare tutte le richieste ricevute.</p>
                         </div>
                       </td>
