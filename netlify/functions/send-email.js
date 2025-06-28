@@ -5,7 +5,7 @@ const mailjet = Mailjet.apiConnect(
 );
   
   exports.handler = async (event) => {
-    const { email, name } = JSON.parse(event.body);
+    const { email } = JSON.parse(event.body);
   
     const htmlContent = `
 <!doctype html>
@@ -115,7 +115,7 @@ const mailjet = Mailjet.apiConnect(
                       <td align="center" style="font-size:0px;padding:0 20px;word-break:break-word;">
                         <div style="font-family:Arial, sans-serif;font-size:14px;line-height:1.5;text-align:center;color:#000000;">
                           <h1>Grazie per aver candidato il tuo progetto!</h1>
-                          <p>Ciao ${name}, in questo momento sono al lavoro per analizzare tutte le richieste ricevute.</p>
+                          <p>Ciao! in questo momento sono al lavoro per analizzare tutte le richieste ricevute.</p>
                         </div>
                       </td>
                     </tr>
@@ -289,11 +289,10 @@ const mailjet = Mailjet.apiConnect(
             To: [
               {
                 Email: email,
-                Name: name,
               },
             ],
             Subject: "Grazie per la tua candidatura!",
-            TextPart: `Ciao ${name}, grazie per aver inviato la tua candidatura.`,
+            TextPart: `Ciao! grazie per aver inviato la tua candidatura.`,
             HTMLPart: htmlContent,
           },
         ],
