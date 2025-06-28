@@ -8,47 +8,61 @@ import Weather from "./Weather.astro";
 
 <section class="grid grid-cols-12">
   <div
-    class="col-span-12 md:col-start-5 md:col-end-9 px-4 flex flex-col justify-center items-center gap-10"
+    class="col-span-12 md:col-start-5 md:col-end-9 px-4 flex flex-col justify-center items-center gap-10 relative"
   >
-    <a
-      href="https://studio-yoga-landingpage.netlify.app/"
-      target="_blank"
-      rel="noopener noreferrer"
+    <div
       class="w-full h-[300px] bg-[url(/studio-yoga-new.png)] bg-cover bg-center rounded-3xl border shadow-lg relative hover:scale-105 transition duration-200"
     >
-      <div></div></a
-    >
-
-    <a
-      href="https://gelateria-milano.netlify.app/"
-      target="_blank"
-      rel="noopener noreferrer"
+      <div
+        class="absolute bottom-[1rem] left-[1rem] rounded-full border flex
+items-center justify-between px-2 gap-2"
+      >
+        <a
+          href="https://github.com/simonegarofalo/landing-page"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src="/github-icon.svg" alt="github-icon" class="w-[28px]" /></a
+        >
+        <a
+          href="https://studio-yoga-landingpage.netlify.app/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src="/website-icon.svg" alt="github-icon" class="w-[24px]" /></a
+        >
+      </div>
+      <div class="absolute top-[1rem] right-[1rem]">
+        <div
+          class="relative h-3 w-3 rounded-full flex justify-center items-center bg-[#f13221] mr-2"
+        >
+          <div class="pulsing absolute h-5 w-5 rounded-full bg-[#f13221]"></div>
+        </div>
+      </div>
+    </div>
+    <div
       class="w-full h-[500px] bg-[url(/gelateria-milano.png)] bg-cover bg-center rounded-3xl border shadow-lg relative hover:scale-105 transition duration-200"
     >
-      <div>
-        <!-- <a
-        href="https://ice-cream-shop-project.netlify.app/"
-        target="_blank"
-        rel="noopener noreferrer"
+      <div
+        class="absolute bottom-[1rem] left-[1rem] rounded-full border flex
+    items-center justify-between px-2 gap-2"
       >
-        <div
-          class="flex justify-center items-center absolute bottom-3 left-3 h-10 w-10 border-2 rounded-full cursor-pointer"
+        <a
+          href="https://github.com/simonegarofalo/ice-cream-shop"
+          target="_blank"
+          rel="noopener noreferrer"
         >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            height="24px"
-            viewBox="0 -960 960 960"
-            width="24px"
-            fill="gray"
-            class="hover:scale-110 transition duration-200"
-          >
-            <path d="m216-160-56-56 464-464H360v-80h400v400h-80v-264L216-160Z"
-            ></path>
-          </svg>
-        </div>
-      </a> -->
+          <img src="/github-icon.svg" alt="github-icon" class="w-[28px]" /></a
+        >
+        <a
+          href="https://gelateria-milano.netlify.app/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src="/website-icon.svg" alt="github-icon" class="w-[24px]" /></a
+        >
       </div>
-    </a>
+    </div>
     <div class="w-full h-[400px] rounded-3xl relative border shadow-lg">
       <Todo />
     </div>
