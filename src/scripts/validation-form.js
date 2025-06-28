@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
       let banner = document.createElement("div");
       banner.textContent = "Grazie per la tua richiesta! Riceverai a breve una mail di conferma.";
       banner.classList.add(
-        "h-20",
+        "w-[94%]",
         "flex",
         "items-center",
       "fixed",
