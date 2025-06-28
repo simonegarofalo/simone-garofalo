@@ -8,13 +8,13 @@
     </h3>
     <form
       method="POST"
-      name="landing-page"
+      name="portfolio"
       data-netlify="true"
       netlify-honeypot="bot-field"
       id="contact-form"
       class="w-full md:max-w-[700px] flex flex-col"
     >
-      <input type="hidden" name="form-name" value="landing-page" />
+      <input type="hidden" name="form-name" value="portfolio" />
       <p class="hidden">
         <label
           >Don’t fill this out if you're human: <input
@@ -30,31 +30,26 @@
           type="email"
           placeholder="Inserisci qui la tua email"
           pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
-          class="w-full p-3 my-2 pl-4 mb-4 rounded-3xl border border-black text-start focus:outline-none focus:ring-1 focus:ring-black"
+          class="w-full p-4 mb-4 rounded-3xl border border-black text-start focus:outline-none focus:ring-1 focus:ring-black"
           required
         />
       </label>
       <p id="email-error" class="text-red-500 text-xs hidden">
         Inserisci una mail valida
       </p>
-      <span>Il tuo messaggio</span>
-      <label
-        for="message"
-        class="w-full mb-8 my-2 rounded-2xl border border-black text-start"
-      >
-        <textarea
-          id="message"
-          name="message"
-          placeholder="Scrivi il tuo messaggio qui..."
-          rows="5"
-          class="w-full rounded-2xl p-4 focus:outline-none focus:ring-2 focus:ring-black"
-          required></textarea>
-      </label>
+      <label for="message" class="mb-2">Il tuo messaggio</label>
+      <textarea
+        id="message"
+        name="message"
+        placeholder="Scrivi il tuo messaggio qui..."
+        rows="5"
+        class="w-full p-4 mb-4 rounded-2xl border border-black text-start focus:outline-none focus:ring-1 focus:ring-black"
+        required></textarea>
       <input
         type="submit"
         value="Invia"
         id="submit"
-        class="bg-black text-white rounded-2xl py-2 px-4 cursor-pointer hover:scale-105 transition duration-200 focus:outline-none focus:ring-2 focus:ring-black"
+        class="bg-black text-white rounded-full py-2 px-4 cursor-pointer hover:scale-105 transition duration-200"
       />
     </form>
   </div>
