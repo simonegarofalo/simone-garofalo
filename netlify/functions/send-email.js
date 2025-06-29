@@ -5,7 +5,7 @@ const mailjet = Mailjet.apiConnect(
 );
   
   exports.handler = async (event) => {
-    const { email } = JSON.parse(event.body);
+    const { email, message } = JSON.parse(event.body);
   
     const htmlContentUtente = `
 <!doctype html>
