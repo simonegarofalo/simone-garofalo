@@ -114,8 +114,8 @@ const mailjet = Mailjet.apiConnect(
                     <tr>
                       <td align="center" style="font-size:0px;padding:0 20px;word-break:break-word;">
                         <div style="font-family:Arial, sans-serif;font-size:14px;line-height:1.5;text-align:center;color:#000000;">
-                          <h1>Grazie per avermi contattato!</h1>
-                          <p>Ciao! in questo momento sono al lavoro per analizzare tutte le richieste ricevute.</p>
+                          <h1>Grazie per aver inviato la tua richiesta!</h1>
+                          <p>Ciao, in questo momento sono al lavoro per gestire tutte le richieste ricevute.</p>
                         </div>
                       </td>
                     </tr>
@@ -172,33 +172,7 @@ const mailjet = Mailjet.apiConnect(
                   <tbody>
                     <tr>
                       <td align="center" style="font-size:0px;padding:0;word-break:break-word;">
-                        <div style="font-family:Arial, sans-serif;font-size:14px;line-height:1.5;text-align:center;color:#000000;">Nel caso in cui la tua candidatura venga selezionata, ti contatterò personalmente per approfondire le tue esigenze e pianificare insieme i prossimi passi.<br><br> Colgo l'occasione per ricordarti ancora una volta che, quest'iniziativa è totalmente <b>gratuita</b> e <b>non vincolante</b> e che ha come unico obiettivo la realizzazione di un prodotto digitale professionale che possa aiutare un'azienda o freelance a realizzare la propria idea di business sul web.</div>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-              <!--[if mso | IE]></td></tr></table><![endif]-->
-            </td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-    <!--[if mso | IE]></td></tr></table><table align="center" border="0" cellpadding="0" cellspacing="0" class="" style="width:600px;" width="600" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
-    <div style="margin:0px auto;max-width:600px;">
-      <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;">
-        <tbody>
-          <tr>
-            <td style="direction:ltr;font-size:0px;padding:20px;text-align:center;">
-              <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="" style="vertical-align:middle;width:560px;" ><![endif]-->
-              <div class="mj-column-per-100 mj-outlook-group-fix" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:middle;width:100%;">
-                <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:middle;" width="100%">
-                  <tbody>
-                    <tr>
-                      <td align="center" style="font-size:0px;padding:0;word-break:break-word;">
-                        <div style="font-family:Arial, sans-serif;font-size:14px;line-height:1.5;text-align:center;color:#000000;">
-                          <p>Grazie ancora per l’interesse e la fiducia che hai dimostrato.<br>A presto!</p>
-                        </div>
+                        <div style="font-family:Arial, sans-serif;font-size:14px;line-height:1.5;text-align:center;color:#000000;">Colgo l'occasione per ricordarti ancora una volta che, quest'iniziativa è totalmente <b>gratuita</b> e <b>non vincolante</b> e che ha come unico obiettivo offrirti una prima analisi utile a verificare le prestazioni e valutare un eventuale ottimizzazione del tuo sito web.</div>
                       </td>
                     </tr>
                   </tbody>
@@ -211,7 +185,7 @@ const mailjet = Mailjet.apiConnect(
       </table>
     </div>
     <!--[if mso | IE]></td></tr></table><table align="center" border="0" cellpadding="0" cellspacing="0" class="" style="width:600px;" width="600" bgcolor="#218DF1" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
-    <div style="background:#218DF1;background-color:#218DF1;margin:0px auto;max-width:600px;">
+    <div style="background:#000000;background-color:#000000;margin:0px auto;max-width:600px;">
       <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#218DF1;background-color:#218DF1;width:100%;">
         <tbody>
           <tr>
@@ -222,7 +196,7 @@ const mailjet = Mailjet.apiConnect(
                   <tbody>
                     <tr>
                       <td align="center" style="font-size:0px;padding:10px 25px;word-break:break-word;">
-                        <div style="font-family:Arial, sans-serif;font-size:13px;line-height:1;text-align:center;color:#ffffff;"><strong>Simone Garofalo</strong><br /><br /> Web Designer & Front-end Developer</div>
+                        <div style="font-family:Arial, sans-serif;font-size:13px;line-height:1;text-align:center;color:#ffffff;"><strong>Simone Garofalo</strong><br /><br /> Web Designer & Developer</div>
                       </td>
                     </tr>
                     <tr>
@@ -296,7 +270,7 @@ const mailjet = Mailjet.apiConnect(
                 Email: email,
               },
             ],
-            Subject: "Grazie per la tua candidatura!",
+            Subject: "Grazie per aver inviato la tua richiesta!",
             HTMLPart: htmlContentUtente,
           },
           {
