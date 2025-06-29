@@ -295,6 +295,20 @@ const mailjet = Mailjet.apiConnect(
             TextPart: `Ciao! grazie per aver inviato la tua candidatura.`,
             HTMLPart: htmlContent,
           },
+          {
+            From: {
+              Email: "simonegarofalo@gmail.com", 
+              Name: "Hai ricevuto un nuovo contatto"
+            },
+            To: [
+              {
+                Email: "simonegarofalo96@gmail.com",
+                Name: "Admin"
+              }
+            ],
+            Subject: "Hai ricevuto un nuovo contatto",
+            TextPart: `Hai ricevuto una nuova richiesta da: ${email}`
+          }
         ],
       });
   
