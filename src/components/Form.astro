@@ -11,18 +11,9 @@
       action="./success.astro"
       name="portfolio"
       data-netlify="true"
-      netlify-honeypot="bot-field"
       id="contact-form"
       class="w-full md:max-w-[700px] flex flex-col"
     >
-      <input type="hidden" name="form-name" value="portfolio" />
-      <p class="hidden">
-        <label
-          >Don’t fill this out if you're human: <input
-            name="bot-field"
-          /></label
-        >
-      </p>
       <label for="email" class="mb-2">La tua email</label>
 
       <input
@@ -30,7 +21,6 @@
         name="email"
         type="email"
         placeholder="Inserisci qui la tua email"
-        pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
         class="w-full p-4 mb-4 rounded-3xl border border-black text-start focus:outline-none focus:ring-1 focus:ring-black"
         required
       />
