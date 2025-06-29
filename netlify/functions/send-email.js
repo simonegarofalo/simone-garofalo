@@ -7,7 +7,7 @@ const mailjet = Mailjet.apiConnect(
   exports.handler = async (event) => {
     const { email } = JSON.parse(event.body);
   
-    const htmlContent = `
+    const htmlContentUtente = `
 <!doctype html>
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
 
@@ -277,6 +277,10 @@ const mailjet = Mailjet.apiConnect(
 
 </html>
     `;
+    const htmlContentAdmin = `
+    <h3>Nuova richiesta dal form</h3>
+    <p>Email del contatto: <strong>${email}</strong></p>
+  `;
   
     try {
       await mailjet.post("send", { version: 'v3.1' }).request({
@@ -292,23 +296,22 @@ const mailjet = Mailjet.apiConnect(
               },
             ],
             Subject: "Grazie per la tua candidatura!",
-            TextPart: `Ciao! grazie per aver inviato la tua candidatura.`,
-            HTMLPart: htmlContent,
+            HTMLPart: htmlContentUtente,
           },
           {
             From: {
-              Email: "simonegarofalo@gmail.com", 
+              Email: "simonegarofalo96@gmail.com", 
               Name: "Hai ricevuto un nuovo contatto"
             },
             To: [
               {
                 Email: "simonegarofalo96@gmail.com",
-                Name: "Admin"
+                Name: "Simone Garofalo"
               }
             ],
             Subject: "Hai ricevuto un nuovo contatto",
-            TextPart: `Hai ricevuto una nuova richiesta da: ${email}`
-          }
+            HTMLPart: htmlContentAdmin,
+          },
         ],
       });
   
