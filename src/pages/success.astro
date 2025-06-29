@@ -1,0 +1,27 @@
+---
+import "../styles/global.css";
+
+import Navbar from "../components/Navbar.astro";
+import Conferma from "../components/Conferma.astro";
+import Footer from "../components/Footer.astro";
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Simone Garofalo | Web designer & Developer"
+    />
+    <link rel="icon" type="image/svg+xml" href="/undefined.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Simone Garofalo | Web designer & Developer</title>
+  </head>
+  <body class="flex flex-col justify-between">
+    <Navbar />
+    <Conferma />
+    <Footer />
+  </body>
+</html>
