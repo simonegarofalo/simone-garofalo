@@ -280,7 +280,7 @@ const mailjet = Mailjet.apiConnect(
     const htmlContentAdmin = `
     <h3>Nuova richiesta dal form</h3>
     <p>Email del contatto: <strong>${email}</strong></p>
-    <p>Testo: ${message}
+    <p>Testo: ${message}</p>
   `;
   
     try {
